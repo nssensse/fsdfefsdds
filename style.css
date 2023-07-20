@@ -99,6 +99,7 @@ input {
     outline: none;
     margin: 10px 5%;
     padding: 15px 10px;
+    color:var(--tg-theme-text-color);
     font-size: 14px;
     background-color: rgba(228, 228, 228, 0.096);
     border: 0.5px solid rgba(160, 160, 160, 0.671);
