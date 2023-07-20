@@ -2,13 +2,13 @@ from  aiogram import Bot,Dispatcher,executor,types
 from aiogram.types.web_app_info import WebAppInfo
 import json
 
-bot= Bot('6366181128:AAG0d8Cxz-JraiVd4_dqHk8vhEe6jHEmhLQ')
+bot= Bot('6354377326:AAFwnePBEuiEV3zZP5JRVFEphc1UfcXw6jw')
 dp=Dispatcher(bot)
 
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
     markup=types.ReplyKeyboardMarkup()
-    markup.add(types.KeyboardButton('открыть веб страницу',web_app=WebAppInfo(url='https://nssensse.github.io/dfjdsjsdkeufu/')))
+    markup.add(types.KeyboardButton('открыть веб страницу',web_app=WebAppInfo(url='https://nssensse.github.io/fsdfefsdds/')))
     await message.answer('Привет добро пожаловать в exhausted shop',reply_markup=markup)
 
 @dp.message_handler(content_types=['web_app_data'])
