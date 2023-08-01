@@ -45,7 +45,7 @@
         });
         let mainbutton=tg.MainButton;
 
-        tg.onEvent("mainButtonClicked", () => {
+        Telegram.WebApp.onEvent('mainButtonClicked', () => {
             document.getElementById("error").innerText = '';
             let name = document.getElementById("streamer_name").value;
             let name2 = document.getElementById("user_name").value;
