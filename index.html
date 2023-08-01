@@ -33,8 +33,9 @@
         let order = document.getElementById("order");
         tg.expand();
         tg.MainButton.show()
-tg.MainButton.setText("test button"); //изменяем текст кнопки иначе
-tg.MainButton.enable() //показываем 
+        
+        tg.MainButton.setText("test button"); //изменяем текст кнопки иначе
+        tg.MainButton.enable() //показываем 
 
         buy.addEventListener("click", () => {
             document.getElementById("main").style.display = "none";
@@ -42,8 +43,9 @@ tg.MainButton.enable() //показываем
             document.getElementById("user_tg").value = tg.initDataUnsafe.user.first_name;
 
         });
+        let mainbutton=tg.MainButton;
 
-        order.addEventListener("click", () => {
+        tg.onEvent("mainButtonClicked", () => {
             document.getElementById("error").innerText = '';
             let name = document.getElementById("streamer_name").value;
             let name2 = document.getElementById("user_name").value;
@@ -71,6 +73,5 @@ tg.MainButton.enable() //показываем
             tg.close();
         });
     </script>
-
 </body>
 </html>
