@@ -11,7 +11,7 @@
 body {
     font-weight: 200;
     color: #cccccc;
-    background: #444444;
+    background: #536167;
 }
 #order{
     margin-top: 100px;
@@ -45,7 +45,9 @@ h2 {
     margin-top: 20px;
     margin-bottom: 10px;
 }
-
+.input_color{
+    color:yellow;
+}
 img {
     width: 200px;
     margin: 20px auto;
@@ -88,6 +90,8 @@ button:hover {
 /* Darker background on mouse-over */
 .btn:hover {
     background-color:var(--tg-theme-button-color);
+    background-color: rgba(228, 228, 228, 0.356);
+    
 }
 #form {
     display: none;
@@ -109,8 +113,11 @@ input {
 input:focus {
     border-color: var(--tg-theme-secondary-bg-color);
 }
-
+::-webkit-input-placeholder { 
+    color:rgb(185, 185, 185);
+}
 input[type=text] {
+  
     transition: width 0.1s ease-in-out;
   }
   
